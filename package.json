@@ -1,0 +1,20 @@
+{
+  "name": "ember-anti-clickjacking",
+  "version": "0.0.1",
+  "description": "Anti-clickjacking support for ember",
+  "license": "APLv2",
+  "author": "James A Rosen, Fastly, Inc.",
+  "directories": {},
+  "repository": "https://github.com/fastly/ember-anti-clickjacking",
+  "scripts": {
+    "test": "standard"
+  },
+  "devDependencies": {
+    "standard": "^10.0.2"
+  },
+  "engines": {
+    "node": "^4.5 || 6.* || >= 7.*"
+  },
+  "private": true,
+  "dependencies": {}
+}
