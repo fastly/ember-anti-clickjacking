@@ -15,6 +15,12 @@
   "engines": {
     "node": "^4.5 || 6.* || >= 7.*"
   },
+  "keywords": [
+    "ember-addon",
+    "i18n"
+  ],
   "private": true,
-  "dependencies": {}
+  "dependencies": {},
+  "ember-addon": {
+  }
 }
