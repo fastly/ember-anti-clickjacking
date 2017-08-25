@@ -2,8 +2,8 @@
   "name": "ember-anti-clickjacking",
   "version": "0.0.1",
   "description": "Anti-clickjacking support for ember",
-  "license": "APLv2",
-  "author": "James A Rosen, Fastly, Inc.",
+  "license": "MIT",
+  "author": "Fastly <support@fastly.com>",
   "directories": {},
   "repository": "https://github.com/fastly/ember-anti-clickjacking",
   "scripts": {
@@ -15,6 +15,12 @@
   "engines": {
     "node": "^4.5 || 6.* || >= 7.*"
   },
+  "keywords": [
+    "ember-addon",
+    "i18n"
+  ],
   "private": true,
-  "dependencies": {}
+  "dependencies": {},
+  "ember-addon": {
+  }
 }
