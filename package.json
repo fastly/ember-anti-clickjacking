@@ -17,7 +17,8 @@
   },
   "keywords": [
     "ember-addon",
-    "i18n"
+    "owasp",
+    "clickjacking"
   ],
   "private": true,
   "dependencies": {},
