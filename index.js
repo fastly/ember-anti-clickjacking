@@ -15,5 +15,9 @@ module.exports = {
     if (type !== 'head-footer') return
     if (!config['ember-anti-clickjacking'].style) return
     return STYLE
+  },
+
+  included () {
+    this.import('vendor/anti-clickjacking.js')
   }
 }
