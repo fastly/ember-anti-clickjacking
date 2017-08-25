@@ -1,6 +1,6 @@
 {
   "name": "@fastly/ember-anti-clickjacking",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "Anti-clickjacking support for ember",
   "license": "MIT",
   "author": "Fastly <support@fastly.com>",
@@ -17,9 +17,10 @@
   },
   "keywords": [
     "ember-addon",
-    "i18n"
+    "owasp",
+    "clickjacking"
   ],
-  "private": true,
+  "private": false,
   "dependencies": {},
   "ember-addon": {}
 }
