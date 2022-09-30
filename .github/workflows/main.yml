@@ -1,0 +1,31 @@
+name: Anti-clickjacking Build Workflow
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🧳 Check out
+        uses: actions/checkout@v2
+      - name: ⎔  Install Node LTS
+        uses: actions/setup-node@v2
+        with:
+          node-version-file: ".nvmrc"
+          registry-url: https://npm.pkg.github.com
+          scope: "@fastly"
+          always-auth: true
+        env:
+          NODE_AUTH_TOKEN: "${{secrets.GITHUB_TOKEN}}"
+      - name: 🥡 Install Dependencies
+        run: npm install
+      - name: 🤖 Run Tests
+        run: npm test
+      - name: 🚀 Publish
+        run: npm publish
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
